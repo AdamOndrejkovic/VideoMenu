@@ -1,0 +1,16 @@
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\bin\Debug\net5.0\VideoMenu.exe
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\bin\Debug\net5.0\VideoMenu.deps.json
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\bin\Debug\net5.0\VideoMenu.runtimeconfig.json
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\bin\Debug\net5.0\VideoMenu.runtimeconfig.dev.json
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\bin\Debug\net5.0\VideoMenu.dll
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\bin\Debug\net5.0\ref\VideoMenu.dll
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\bin\Debug\net5.0\VideoMenu.pdb
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.csproj.AssemblyReference.cache
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.AssemblyInfoInputs.cache
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.AssemblyInfo.cs
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.csproj.CoreCompileInputs.cache
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.dll
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\ref\VideoMenu.dll
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.pdb
+C:\Users\adamo\RiderProjects\VideoMenu\VideoMenu\obj\Debug\net5.0\VideoMenu.genruntimeconfig.cache
