@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace VideoMenu
 {
@@ -20,6 +21,11 @@ namespace VideoMenu
             };
 
             SetList();
+            ConsoleSpinner.ShowSimplePercentage();
+            Console.Clear();
+            
+
+            Console.WriteLine();
 
             var selection = ShowMenu(menuItems);
             while (selection != 6)
@@ -33,10 +39,10 @@ namespace VideoMenu
                         AddMovie();
                         break;
                     case 3:
-                        Console.WriteLine("Show All Movies");
+                        EditMovie();
                         break;
                     case 4:
-                        Console.WriteLine("Show All Movies");
+                        DeleteMovie();
                         break;
                     case 5:
                         Console.WriteLine("Show All Movies");
@@ -49,6 +55,83 @@ namespace VideoMenu
             }
 
             Console.WriteLine("Exited");
+        }
+
+        private static void DeleteMovie()
+        {
+            Movie movieToRemove = FindMovieById();
+            if (movieToRemove != null)
+            {
+                movieList.Remove(movieToRemove);
+            }
+        }
+
+        private static void EditMovie()
+        {
+            Movie movieToEdit = FindMovieById();
+
+            Console.WriteLine($"Current Title: {movieToEdit.Title}");
+            var newTitle = Console.ReadLine();
+            
+            Console.WriteLine($"Current Release Date: {movieToEdit.ReleaseDate.Year}");
+            var newReleaseDate = Console.ReadLine();
+            
+            Console.WriteLine($"Current Story Line: {movieToEdit.StoryLine}");
+            var newStoryLine = Console.ReadLine();
+            
+            Console.WriteLine($"Current Genre: {movieToEdit.Genre}");
+            var newGenre = Console.ReadLine();
+
+            movieToEdit.Title = newTitle;
+            movieToEdit.ReleaseDate = new DateTime(Convert.ToInt32(newReleaseDate), 1, 1);
+            movieToEdit.StoryLine = newStoryLine;
+            movieToEdit.Genre = newGenre;
+        }
+
+        private static Movie FindMovieById()
+        {
+            Console.WriteLine("Write the movie's ID:");
+            var input = Console.ReadLine();
+
+            int id;
+            if (!int.TryParse(input, out id))
+            {
+                Console.WriteLine("Please insert a number");
+            }
+
+            Movie movieFound = null;
+            foreach (var movie in movieList)
+            {
+                if (movie.Id== id)
+                {
+                    movieFound = movie;
+                }
+            }
+
+            return movieFound;
+        }
+        
+        private static Movie FindMovieByTitle()
+        {
+            Console.WriteLine("Write the movie's title");
+            var input = Console.ReadLine();
+
+            
+            if (input is { Length: > 0 })
+            {
+                Console.WriteLine("Please write a title");
+            }
+
+            Movie movieFound = null;
+            foreach (var movie in movieList)
+            {
+                if (movie.Title.Contains(input))
+                {
+                    movieFound = movie;
+                }
+            }
+
+            return movieFound;
         }
 
         private static void AddMovie()
@@ -123,7 +206,7 @@ namespace VideoMenu
 
             int selection;
             while (!int.TryParse(Console.ReadLine(), out selection)
-            || selection is < 1or > 5)
+            || selection is < 1 or > 6)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("You need to choose number between 1-6");
