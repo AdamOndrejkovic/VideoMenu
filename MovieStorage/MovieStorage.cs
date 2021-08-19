@@ -8,17 +8,17 @@ namespace VideoMenu
         private static List<Movie> movieList = new List<Movie>();
         private static int Id = 1;
 
-        internal int GetId()
+        public int GetId()
         {
             return Id;
         }
 
-        internal void SetId()
+        public void SetId()
         {
             Id++;
         }
-        
-        internal static void SetList()
+
+        public static void SetList()
         {
             movieList.Add(new Movie()
             {
@@ -45,7 +45,7 @@ namespace VideoMenu
             movieList.Add(movie);
         }
 
-        internal List<Movie> GetMovieList()
+        public List<Movie> GetMovieList()
         {
             return movieList;
         }

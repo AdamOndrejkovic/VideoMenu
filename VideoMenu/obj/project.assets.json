@@ -132,6 +132,45 @@
         "runtime": {
           "bin/placeholder/Models.dll": {}
         }
+      },
+      "MovieManager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "ConsoleTables": "2.4.2",
+          "Models": "1.0.0",
+          "MovieStorage": "1.0.0",
+          "StringConstants": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieManager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieManager.dll": {}
+        }
+      },
+      "MovieStorage/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieStorage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieStorage.dll": {}
+        }
+      },
+      "StringConstants/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/StringConstants.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StringConstants.dll": {}
+        }
       }
     }
   },
@@ -700,13 +739,30 @@
       "type": "project",
       "path": "../Models/Models.csproj",
       "msbuildProject": "../Models/Models.csproj"
+    },
+    "MovieManager/1.0.0": {
+      "type": "project",
+      "path": "../MovieManager/MovieManager.csproj",
+      "msbuildProject": "../MovieManager/MovieManager.csproj"
+    },
+    "MovieStorage/1.0.0": {
+      "type": "project",
+      "path": "../MovieStorage/MovieStorage.csproj",
+      "msbuildProject": "../MovieStorage/MovieStorage.csproj"
+    },
+    "StringConstants/1.0.0": {
+      "type": "project",
+      "path": "../StringConstants/StringConstants.csproj",
+      "msbuildProject": "../StringConstants/StringConstants.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "ConsoleTables >= 2.4.2",
       "MarkdownLog >= 0.9.64",
-      "Models >= 1.0.0"
+      "Models >= 1.0.0",
+      "MovieManager >= 1.0.0",
+      "StringConstants >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -746,6 +802,12 @@
           "projectReferences": {
             "C:\\Users\\adamo\\RiderProjects\\VideoMenu\\Models\\Models.csproj": {
               "projectPath": "C:\\Users\\adamo\\RiderProjects\\VideoMenu\\Models\\Models.csproj"
+            },
+            "C:\\Users\\adamo\\RiderProjects\\VideoMenu\\MovieManager\\MovieManager.csproj": {
+              "projectPath": "C:\\Users\\adamo\\RiderProjects\\VideoMenu\\MovieManager\\MovieManager.csproj"
+            },
+            "C:\\Users\\adamo\\RiderProjects\\VideoMenu\\StringConstants\\StringConstants.csproj": {
+              "projectPath": "C:\\Users\\adamo\\RiderProjects\\VideoMenu\\StringConstants\\StringConstants.csproj"
             }
           }
         }

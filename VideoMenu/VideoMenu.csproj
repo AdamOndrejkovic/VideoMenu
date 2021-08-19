@@ -12,6 +12,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Models\Models.csproj" />
+      <ProjectReference Include="..\MovieManager\MovieManager.csproj" />
+      <ProjectReference Include="..\StringConstants\StringConstants.csproj" />
     </ItemGroup>
 
 </Project>

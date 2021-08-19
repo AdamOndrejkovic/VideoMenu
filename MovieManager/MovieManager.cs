@@ -9,7 +9,7 @@ namespace VideoMenu
     {
         private static readonly MovieStorage MovieStorage = new MovieStorage();
 
-        internal void DeleteMovie()
+        public void DeleteMovie()
         {
             Movie movieToRemove = FindMovieById();
             if (movieToRemove != null)
@@ -18,7 +18,7 @@ namespace VideoMenu
             }
         }
 
-        internal void EditMovie()
+        public void EditMovie()
         {
             Movie movieToEdit = FindMovieById();
 
@@ -52,7 +52,7 @@ namespace VideoMenu
             }
 
             Movie movieFound = null;
-            foreach (var movie in MovieStorage.GetMovieList())
+            foreach (Movie movie in MovieStorage.GetMovieList())
             {
                 if (movie.Id== id)
                 {
@@ -63,7 +63,7 @@ namespace VideoMenu
             return movieFound;
         }
         
-        private static Movie FindMovieByTitle()
+        public static Movie FindMovieByTitle()
         {
             Console.WriteLine("Write the movie's title");
             var input = Console.ReadLine();
@@ -75,7 +75,7 @@ namespace VideoMenu
             }
 
             Movie movieFound = null;
-            foreach (var movie in MovieStorage.GetMovieList())
+            foreach (Movie movie in MovieStorage.GetMovieList())
             {
                 if (movie.Title.Contains(input))
                 {
@@ -86,7 +86,7 @@ namespace VideoMenu
             return movieFound;
         }
 
-        internal void AddMovie()
+        public void AddMovie()
         {
             Console.WriteLine("Movie Title");
             var title = Console.ReadLine();
@@ -113,7 +113,7 @@ namespace VideoMenu
             MovieStorage.SetId();
         }
 
-        internal void ShowMovies()
+        public void ShowMovies()
         {
             var table = new ConsoleTable("ID", "Title", "Release Date", "Story Line", "Genre");
             foreach (var movie in MovieStorage.GetMovieList())
