@@ -1,0 +1,12 @@
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\bin\Debug\net5.0\StringConstants.deps.json
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\bin\Debug\net5.0\StringConstants.dll
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\bin\Debug\net5.0\ref\StringConstants.dll
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\bin\Debug\net5.0\StringConstants.pdb
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\StringConstants.csproj.AssemblyReference.cache
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\StringConstants.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\StringConstants.AssemblyInfoInputs.cache
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\StringConstants.AssemblyInfo.cs
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\StringConstants.csproj.CoreCompileInputs.cache
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\StringConstants.dll
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\ref\StringConstants.dll
+C:\Users\adamo\RiderProjects\VideoMenu\StringConstants\obj\Debug\net5.0\StringConstants.pdb
